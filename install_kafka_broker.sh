@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # This script installs kafka for testing. 
-# Since Kafka runs as root it is not recommended to be used in production due to security reasons.
+# Since Kafka runs as root it is not recommended to be used in production as is.
+# You can create kafka user and configure kafka to be run as kafka user to be safe.
 
 yum -y install java-1.8.0-openjdk
 mkdir -p /opt/kafka && cd /opt/kafka
